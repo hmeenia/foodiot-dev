@@ -3,13 +3,25 @@
 }
 
 body {
-  width: 450px;
+  width: 1000px;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
 }
+#root {
+  width: 1000px;
+  background-color: #f6f4f4;  
+}
 
+.react-grid-Canvas {
+  overflow: hidden !important;
+  height: auto !important;
+}
+
+.react-grid-HeaderRow {
+  overflow: hidden !important;
+}
 .mrgn-btm-20px {
   margin-bottom: 20px;
 }
@@ -32,6 +44,8 @@ body {
   padding: 20px;
   color: white;
 }
+
+
 
 .App-title {
   font-size: 1.5em;
