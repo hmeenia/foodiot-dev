@@ -5,6 +5,7 @@ import './App.css';
 import Signup from './Components/Signup'
 import UserAnalytics from './Components/UserAnalytics'
 import ChefMenu from './Components/ChefMenu';
+import Dashboard from './Components/Dashboard'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Route path="/signup" component={Signup} />
           <Route path="/useranalytics" component={UserAnalytics} />
           <Route path="/chefMenu" component={ChefMenu} />
+          <Route path="/dashboard" component={Dashboard} />
         </div>
       </Router>
     );
