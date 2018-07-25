@@ -21,23 +21,52 @@ class Dashboard extends Component {
             ], rows: [
                 {
                     itemName: "Dal",
-                    quantity: "50Kg",
+                    quantity: "80Kg",
                 },
                 {
                     itemName: "Rice",
-                    quantity: "33Kg",
+                    quantity: "100Kg",
                 },
                 {
                     itemName: "Chicken",
-                    quantity: "02Kg",
+                    quantity: "50Kg",
                 },
                 {
                     itemName: "Roti",
-                    quantity: "40Kg",
+                    quantity: "60Kg",
                 }
             ]
         }       
 
+    }
+
+    componentWillMount(){
+        var counter = 0
+        setInterval( () => {
+            this.setState(
+                {
+                    rows: [
+                        {
+                            itemName: "Dal",
+                            quantity: (80 - counter*4) + "Kg",
+                        },
+                        {
+                            itemName: "Rice",
+                            quantity: (100 - counter*5) + "Kg",
+                        },
+                        {
+                            itemName: "Chicken",
+                            quantity: (50 - counter*2) + "Kg",
+                        },
+                        {
+                            itemName: "Roti",
+                            quantity: (60 - counter*2) + "Kg",
+                        }
+                    ]
+                })
+                counter++;
+        } , 5000)
+        
     }
 
     getRowAt = (index) => {
