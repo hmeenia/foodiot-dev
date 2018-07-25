@@ -1,3 +1,18 @@
+.label-mrgn {
+  margin-top: 10px;
+}
+body {
+  width: 450px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.mrgn-btm-20px {
+  margin-bottom: 20px;
+}
+
 .App {
   text-align: center;
 }
