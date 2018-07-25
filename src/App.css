@@ -3,7 +3,7 @@
 }
 
 body {
-  width: 450px;
+  width: 750px;
   position: absolute;
   margin: auto;
   left: 0;
@@ -40,6 +40,23 @@ body {
 .App-intro {
   font-size: large;
 }
+
+.chefmenu{
+  width: 100% !important;
+  padding: 10px 20px;  
+}
+
+/* .button-wrapper{
+  margin-top: 20px;
+  text-align: right;
+}
+
+.button-wrapper > button {
+    color: #FFF;
+    background-color: #2196F3;
+    border: none;
+    padding: 10px;
+} */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
