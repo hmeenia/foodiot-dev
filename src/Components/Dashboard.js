@@ -64,7 +64,12 @@ class Dashboard extends Component {
                         }
                     ]
                 })
-                counter++;
+            counter++;
+            this.state.rows.forEach( rowValue => {
+                if(parseInt(rowValue.quantity) <= 46) {
+                    alert(`${rowValue.itemName} is low on quantity, kidnly refill or prepare more`)
+                }
+            })
         } , 5000)
         
     }
