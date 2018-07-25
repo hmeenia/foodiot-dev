@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import xhr from 'xhr'
+
 
 class Signup extends Component {
   constructor(props) {
